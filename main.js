@@ -1,6 +1,6 @@
 const container = document.querySelector('.container');
 
-const COUNT = 40;
+const COUNT = 15;
 const MAX_DELAY = 2000;
 const colors = ['#fff', '#fc6b03', '#ff0000', '#e7fc03', '#e7fc03'];
 
