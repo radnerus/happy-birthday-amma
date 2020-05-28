@@ -22,7 +22,7 @@ function addHeart() {
 
   heartSpan.id = id;
   heartSpan.classList.add('heart');
-  heartSpan.style.left = Math.random() * 95 + '%';
+  heartSpan.style.left = Math.random() * 90 + 5 + 'vw';
   heartSpan.style.webkitTransform += `rotate(-45deg) scale(${scale})`;
   heartSpan.style.animationDuration = `${animationDuration}s`;
   heartSpan.style.zIndex = zIndex;
