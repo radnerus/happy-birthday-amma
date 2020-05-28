@@ -11,7 +11,7 @@ function addHeart() {
   const heartSpan = document.createElement('span');
 
   const id = Math.random() * 1000000;
-  const scale = Math.random() * 3 + 0.2;
+  const scale = Math.random() * 1.5 + 0.2;
   const animationDuration = Math.random() * 7 + 1;
   const delay = Math.random() * MAX_DELAY;
   const zIndex = Math.floor(Math.random() * 2);
