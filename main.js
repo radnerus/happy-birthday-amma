@@ -14,7 +14,7 @@ function addHeart() {
   const scale = Math.random() * 3 + 0.2;
   const animationDuration = Math.random() * 7 + 1;
   const delay = Math.random() * MAX_DELAY;
-  const zIndex = Math.floor(Math.random() * 4 - 3);
+  const zIndex = Math.floor(Math.random() * 2);
   const colorIndex = Math.floor(Math.random() * colors.length);
   const transparency = Math.random * 0.2 + 0.3;
 
