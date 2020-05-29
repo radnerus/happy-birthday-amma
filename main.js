@@ -30,10 +30,8 @@ function addHeart(heartSpan) {
   heartSpan.style.setProperty('--color', colors[colorIndex]);
   heartSpan.style.opacity = transparency;
 
-  //   setTimeout(() => {
   container.appendChild(heartSpan);
-  //   }, delay);
   setTimeout(() => {
-    addHeart();
+    addHeart(heartSpan);
   }, animationDuration * 1000);
 }
