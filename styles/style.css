@@ -60,6 +60,7 @@
 
 .heart {
     --animation: move-up 3.5s ease-in-out infinite, pulse 1s linear infinite;
+    --w-animation: move-up 3.5s infinite, pulse 1s infinite;
     --color: #f00;
     background-color: var(--color);
     display: inline-block;
@@ -70,10 +71,10 @@
     transform: rotate(-45deg);
     width: 30px;
     animation: var(--animation);
-    -webkit-animation: var(--animation);
+    -webkit-animation: var(--w-animation);
     -webkit-backface-visibility: hidden;
-    -moz-animation: var(--animation);
-    -o-animation: var(--animation);
+    -moz-animation: var(--w-animation);
+    -o-animation: var(--w-animation);
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12)
 }
 
