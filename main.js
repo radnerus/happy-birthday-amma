@@ -1,6 +1,6 @@
 const container = document.querySelector('.container');
 
-const COUNT = 15;
+const COUNT = 10;
 const MAX_DELAY = 2000;
 const colors = ['#fff', '#fc6b03', '#ff0000', '#e7fc03', '#e7fc03'];
 
@@ -22,7 +22,7 @@ function addHeart() {
 
   heartSpan.id = id;
   heartSpan.classList.add('heart');
-  heartSpan.style.left = Math.random() * 90 + 5 + 'vw';
+  heartSpan.style.left = Math.random() * 100 + '%';
   heartSpan.style.webkitTransform += `rotate(-45deg) scale(${scale})`;
   heartSpan.style.animationDuration = `${animationDuration}s`;
   heartSpan.style.zIndex = zIndex;
