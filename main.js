@@ -5,12 +5,14 @@ const MAX_DELAY = 2000;
 const colors = ['#fff', '#fc6b03', '#ff0000', '#e7fc03', '#e7fc03'];
 
 for (let i = 0; i < COUNT; i++) {
-  addHeart();
-}
-function addHeart() {
   const heartSpan = document.createElement('span');
 
   const id = Math.random() * 1000000;
+  heartSpan.id = id;
+
+  addHeart(heartSpan);
+}
+function addHeart(heartSpan) {
   const scale = Math.random() * 1.5 + 0.2;
   const animationDuration = Math.random() * 7 + 1;
   const delay = Math.random() * MAX_DELAY;
@@ -20,7 +22,6 @@ function addHeart() {
 
   console.log(colors[colorIndex]);
 
-  heartSpan.id = id;
   heartSpan.classList.add('heart');
   heartSpan.style.left = Math.random() * 100 + '%';
   heartSpan.style.webkitTransform += `rotate(-45deg) scale(${scale})`;
@@ -33,7 +34,6 @@ function addHeart() {
   container.appendChild(heartSpan);
   //   }, delay);
   setTimeout(() => {
-    document.getElementById(id).remove();
     addHeart();
   }, animationDuration * 1000);
 }

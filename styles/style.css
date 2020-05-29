@@ -26,10 +26,13 @@
 
 .image {
     border-radius: 50%;
-    padding: 50px;
+    /* padding: 50px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 500px;
     height: 500px;
     z-index: 1;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12)
 }
 
 .message-container {
@@ -65,8 +68,7 @@
     bottom: 0;
     transform: rotate(-45deg);
     width: 30px;
-    animation: move-up 3.5s linear, pulse 1s linear infinite;
-    /* box-shadow: 1px 1px 0 0 rgba(0, 0, 0, 0.75); */
+    animation: move-up 3.5s linear infinite, pulse 1s linear infinite;
     box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12)
 }
 
@@ -83,14 +85,11 @@
 .heart:before {
     top: -15px;
     left: 0;
-    /* border-top: 10px solid rgb(256, 0, 0, 0.2); */
 }
 
 .heart:after {
     left: 15px;
     top: 0;
-    /* z-index: -10; */
-    /* box-shadow: 0.5px 0px 0 0 rgba(0, 0, 0, 0.75); */
 }
 
 @keyframes move-up {
